@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Hello from <%= node['fqdn'] %></title></head>
+
+  <body>
+    <h1><%= @greeting %></h1>
+    <p>I'm a fancy website running on a <%= node['lsb']['description'] %> machine with the IP <%= node['ipaddress'] %>. Am I pretty or what?</p>
+  </body>
+</html>
